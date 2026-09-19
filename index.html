@@ -1,27 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Susan Otieno | Data Science Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #172554;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #172554;
+            font-size: 30px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #172554;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Susan Otieno</h1>
-    <h2>Data Science & Analytics Student</h2>
+    <header>
+        <h1>Susan Otieno</h1>
+        <p>Data Science & Analytics Student</p>
+        <p>Turning data into meaningful insights</p>
+    </header>
 
-    <p>
-        Welcome to my portfolio. Here I showcase my data science,
-        analytics, visualization, and machine learning projects.
-    </p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <h2>About Me</h2>
-    <p>
-        I am a Data Science and Analytics student interested in
-        using data to solve real-world problems.
-    </p>
+    <section id="about">
+        <h2>About Me</h2>
 
-    <h2>Projects</h2>
-    <p>My projects will be added here.</p>
+        <div class="about">
+            <p>
+                I am a Data Science and Analytics student passionate about
+                using data to understand problems, discover patterns and
+                support data-driven decision making.
+            </p>
+
+            <p>
+                My interests include data analysis, data visualization,
+                machine learning, natural language processing and
+                time series forecasting.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">R</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Excel</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">NLP</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Global Public Health Analysis</h3>
+                <p>
+                    Analysis and visualization of global public health
+                    statistics to identify trends and patterns.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Superstore Sales Dashboard</h3>
+                <p>
+                    Interactive Power BI analysis exploring sales,
+                    profitability, customers and product performance.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Kenya CPI Time Series Forecasting</h3>
+                <p>
+                    Time series analysis of Kenya's Consumer Price Index,
+                    including data exploration and forecasting.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Health Data Analysis</h3>
+                <p>
+                    Analysis of health facility data to explore disease
+                    patterns and trends across Kenyan sub-counties.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="about">
+            <p>
+                GitHub:
+                <a href="https://github.com/Suezan884">
+                    github.com/Suezan884
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Susan Otieno | Data Science Portfolio</p>
+    </footer>
 
 </body>
 </html>
