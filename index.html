@@ -24,7 +24,18 @@
             background: #172554;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 60px 20px;
+        }
+
+        /* Profile Photo */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            background: #dbeafe;
         }
 
         header h1 {
@@ -34,6 +45,12 @@
 
         header p {
             font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
         }
 
         nav {
@@ -43,13 +60,18 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
+            z-index: 100;
         }
 
         nav a {
             color: #172554;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 12px;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
@@ -71,6 +93,33 @@
             margin: auto;
         }
 
+        .about p {
+            margin-bottom: 15px;
+        }
+
+        /* Resume */
+        .resume-section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .resume-section h3 {
+            color: #172554;
+            margin-bottom: 12px;
+        }
+
+        .resume-section ul {
+            margin-left: 20px;
+        }
+
+        .resume-section li {
+            margin-bottom: 8px;
+        }
+
+        /* Skills */
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -85,6 +134,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
+        /* Projects */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -110,6 +160,57 @@
             font-weight: bold;
         }
 
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Lab Challenges */
+        .lab {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        .lab h3 {
+            color: #172554;
+            margin-bottom: 15px;
+        }
+
+        .lab h4 {
+            color: #172554;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .lab ul {
+            margin-left: 20px;
+        }
+
+        .lab li {
+            margin-bottom: 5px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: #172554;
+            font-weight: bold;
+        }
+
         footer {
             background: #172554;
             color: white;
@@ -121,42 +222,155 @@
 
 <body>
 
-    <header>
+    <!-- HOME -->
+    <header id="home">
+
+        <!-- Replace profile-photo.jpg with your actual photo later -->
+        <img src="profile-photo.jpg"
+             alt="Susan Otieno profile photo"
+             class="profile-photo">
+
         <h1>Susan Otieno</h1>
+
         <p>Data Science & Analytics Student</p>
-        <p>Turning data into meaningful insights</p>
+
+        <p class="tagline">
+            Turning data into meaningful insights
+        </p>
+
     </header>
 
+
+    <!-- NAVIGATION -->
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#resume">Resume</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#labs">Lab Challenges</a>
         <a href="#contact">Contact</a>
     </nav>
 
+
+    <!-- ABOUT -->
     <section id="about">
+
         <h2>About Me</h2>
 
         <div class="about">
+
             <p>
-                I am a Data Science and Analytics student passionate about
-                using data to understand problems, discover patterns and
-                support data-driven decision making.
+                I am a Data Science and Analytics student at the
+                United States International University – Africa with
+                a strong interest in using data to solve real-world
+                problems.
             </p>
 
             <p>
+                I enjoy exploring data, creating visualizations and
+                learning how data can support better decision-making.
                 My interests include data analysis, data visualization,
                 machine learning, natural language processing and
                 time series forecasting.
             </p>
-        </div>
-    </section>
-   
 
+        </div>
+
+    </section>
+
+
+    <!-- RESUME -->
+    <section id="resume">
+
+        <h2>Resume</h2>
+
+
+        <!-- Academic Background -->
+        <div class="resume-section">
+
+            <h3>Academic Background</h3>
+
+            <p>
+                <strong>BSc Data Science and Analytics</strong><br>
+                United States International University – Africa<br>
+                Expected Graduation: September 2027
+            </p>
+
+            <p>
+                Relevant coursework includes Database Systems,
+                Data Structures and Algorithms, Data Warehousing
+                and Mining, Probability and Statistics, Business
+                Intelligence and Visualization, Artificial Intelligence,
+                Natural Language Processing and Mathematical Finance.
+            </p>
+
+        </div>
+
+
+        <!-- Professional Experience -->
+        <div class="resume-section">
+
+            <h3>Professional Experience</h3>
+
+            <p>
+                <strong>Research and Data Analytics Attachment</strong><br>
+                Kenya Medical Research Institute (KEMRI)<br>
+                January 2026 – March 2026
+            </p>
+
+            <ul>
+                <li>
+                    Applied data analysis and visualization techniques
+                    in research-related activities.
+                </li>
+
+                <li>
+                    Created dashboards and visual reports using
+                    Microsoft Excel.
+                </li>
+
+                <li>
+                    Participated in scientific communication and
+                    knowledge dissemination activities.
+                </li>
+
+                <li>
+                    Gained exposure to research methodology and
+                    ethical principles in human health research.
+                </li>
+
+                <li>
+                    Learned data privacy and security practices under
+                    the Kenya Data Protection Act.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- Soft Skills -->
+        <div class="resume-section">
+
+            <h3>Soft Skills</h3>
+
+            <p>
+                Teamwork, Problem Solving, Critical Thinking,
+                Adaptability and Time Management
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
     <section id="skills">
+
         <h2>Skills & Tools</h2>
 
         <div class="skills">
+
             <div class="skill">Python</div>
             <div class="skill">R</div>
             <div class="skill">Excel</div>
@@ -166,80 +380,283 @@
             <div class="skill">Machine Learning</div>
             <div class="skill">NLP</div>
             <div class="skill">Git & GitHub</div>
+
         </div>
+
     </section>
 
+
+    <!-- PROJECTS -->
     <section id="projects">
+
         <h2>My Projects</h2>
 
         <div class="projects">
 
+
+            <!-- Lung Cancer -->
             <div class="project">
-                <img src="Lung_Cancer.png" alt="Lung Cancer Prediction project visualization" style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
+
+                <img src="Lung_Cancer.png"
+                     alt="Lung Cancer Prediction project visualization">
+
                 <h3>Lung Cancer Prediction</h3>
-               <p>
-    A group machine learning project focused on predicting
-    lung cancer outcomes using patient-related data and
-    classification techniques.
-</p>
-                <a href="https://github.com/Calvin-Gacheru/Predicting-Lung-Cancer-Survival">View Project</a>
+
+                <p>
+                    A group machine learning project focused on
+                    predicting lung cancer outcomes using
+                    patient-related data and classification
+                    techniques.
+                </p>
+
+                <a href="https://github.com/Calvin-Gacheru/Predicting-Lung-Cancer-Survival">
+                    View Project
+                </a>
+
             </div>
 
+
+            <!-- Superstore -->
             <div class="project">
-                <img src="Superstore_Dashboard.png" alt="Superstore Sales Dashboard" style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
+
+                <img src="Superstore_Dashboard.png"
+                     alt="Superstore Sales Dashboard">
+
                 <h3>Superstore Sales Dashboard</h3>
+
                 <p>
                     Interactive Power BI analysis exploring sales,
                     profitability, customers and product performance.
                 </p>
+
                 <a href="https://github.com/Suezan884/DSA3050A_MidSem_SusanOtieno_670501">
                     View Project
                 </a>
+
             </div>
 
-           <div class="project">
-              <img src="CPI-Forecasting.png" alt="Kenya CPI Time Series Forecasting visualization" style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
-               <h3>Kenya CPI Time Series Forecasting</h3>
-         <p>
-        Time series analysis of Kenya's Consumer Price Index
-        to explore trends, variability, stationarity and
-        forecasting patterns.
-    </p>
-    <a href="https://github.com/Suezan884/Kenya-CPI-Time-Series-Forecasting">
-        View Project
-    </a>
-</div>
 
+            <!-- CPI -->
             <div class="project">
-               <h3>Bookstore Chatbot</h3>
-<p>
-    A group project involving the development of a chatbot
-    designed to assist users with bookstore-related queries
-    using natural language processing.
-</p>
-<a href="https://github.com/Suezan884/Bookstore-Chatbot">
-    View Project
-</a>
-</div>
+
+                <img src="CPI-Forecasting.png"
+                     alt="Kenya CPI Time Series Forecasting visualization">
+
+                <h3>Kenya CPI Time Series Forecasting</h3>
+
+                <p>
+                    Time series analysis of Kenya's Consumer Price
+                    Index to explore trends, variability, stationarity
+                    and forecasting patterns.
+                </p>
+
+                <a href="https://github.com/Suezan884/Kenya-CPI-Time-Series-Forecasting">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Bookstore Chatbot -->
+            <div class="project">
+
+                <h3>Bookstore Chatbot</h3>
+
+                <p>
+                    A group project involving the development of
+                    a chatbot designed to assist users with
+                    bookstore-related queries using natural
+                    language processing.
+                </p>
+
+                <a href="https://github.com/Suezan884/Bookstore-Chatbot">
+                    View Project
+                </a>
+
+            </div>
 
         </div>
+
     </section>
 
+
+    <!-- LAB CHALLENGES -->
+    <section id="labs">
+
+        <h2>Lab Challenges</h2>
+
+
+        <!-- Web Scraping Lab -->
+        <div class="lab">
+
+            <h3>Lab Challenge 1: Web Scraping</h3>
+
+            <h4>Problem Statement</h4>
+
+            <p>
+                The challenge involved extracting structured information
+                from a website and organizing the collected information
+                into a usable dataset.
+            </p>
+
+            <h4>Approach</h4>
+
+            <p>
+                I accessed the target webpage, identified the relevant
+                HTML elements and extracted information about countries.
+                The collected data was organized into structured records
+                containing country names, capitals, population and area.
+            </p>
+
+            <h4>Tools Used</h4>
+
+            <ul>
+                <li>Python</li>
+                <li>Web Scraping</li>
+                <li>HTML</li>
+                <li>Jupyter Notebook</li>
+            </ul>
+
+            <h4>Key Lessons Learned</h4>
+
+            <p>
+                I learned how websites are structured using HTML and how
+                information can be extracted and transformed into
+                structured datasets for analysis.
+            </p>
+
+        </div>
+
+
+        <!-- Netflix Data Wrangling -->
+        <div class="lab">
+
+            <h3>Lab Challenge 2: Netflix Data Wrangling</h3>
+
+            <h4>Problem Statement</h4>
+
+            <p>
+                The challenge involved cleaning and preparing a Netflix
+                dataset for analysis by identifying missing values,
+                inconsistencies and data quality issues.
+            </p>
+
+            <h4>Approach</h4>
+
+            <p>
+                I inspected the dataset, checked for missing values,
+                handled incomplete records and performed consistency
+                checks on the data. The cleaned dataset was then
+                prepared for further analysis.
+            </p>
+
+            <h4>Tools Used</h4>
+
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Jupyter Notebook</li>
+                <li>Kaggle</li>
+            </ul>
+
+            <h4>Key Lessons Learned</h4>
+
+            <p>
+                I learned the importance of data cleaning before analysis
+                and how missing values and inconsistent records can affect
+                the quality of analytical results.
+            </p>
+
+        </div>
+
+
+        <!-- NHL Web Data Lab -->
+        <div class="lab">
+
+            <h3>Lab Challenge 3: Web Data Extraction</h3>
+
+            <h4>Problem Statement</h4>
+
+            <p>
+                The challenge involved extracting information from an
+                HTML table and converting the information into a
+                structured format for analysis.
+            </p>
+
+            <h4>Approach</h4>
+
+            <p>
+                I inspected the webpage structure, identified the
+                relevant table and extracted the required records
+                into a structured dataset.
+            </p>
+
+            <h4>Tools Used</h4>
+
+            <ul>
+                <li>Python</li>
+                <li>Web Scraping</li>
+                <li>HTML Tables</li>
+                <li>Jupyter Notebook</li>
+            </ul>
+
+            <h4>Key Lessons Learned</h4>
+
+            <p>
+                This challenge helped me understand how structured
+                information can be collected from web pages and
+                prepared for data analysis.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
     <section id="contact">
+
         <h2>Contact</h2>
 
-        <div class="about">
+        <div class="contact">
+
             <p>
-                GitHub:
-                <a href="https://github.com/Suezan884">
+                I am open to opportunities involving data analysis,
+                data science, business intelligence and collaborative
+                data projects.
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Suezan884" target="_blank">
                     github.com/Suezan884
                 </a>
             </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:susanawino2002@gmail.com">
+                    susanawino2002@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                +254 796 608 921
+            </p>
+
         </div>
+
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Susan Otieno | Data Science Portfolio</p>
+
+        <p>
+            © 2026 Susan Otieno | Data Science & Analytics Portfolio
+        </p>
+
     </footer>
 
 </body>
